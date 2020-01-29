@@ -17,6 +17,24 @@ class MyThreadConcept extends Thread
 		}
 	}
 }
+
+class MyThreadConcept1 extends Thread
+{
+	int i;
+	public void run()
+	{
+		for(i=1;i<=10;i++)
+		{
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		System.out.println("CSI PUNE");
+		}
+	}
+}
 public class MyThread {
 
 	public static void main(String[] args) {
